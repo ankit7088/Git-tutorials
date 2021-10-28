@@ -34,7 +34,9 @@ int main(){
         s.insert(rand());
     }
     for(int i=0;i<(int)1e5;i++){
-        auto it=lower_bound(s.begin(),s.end(),rand());
+        // auto it=lower_bound(s.begin(),s.end(),rand()); -->show TLE error 
+        
+        auto it=s.lower_bound(rand());
     }
 
     return 0;
